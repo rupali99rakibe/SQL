@@ -1,0 +1,21 @@
+CREATE TABLE COMPANY (
+ID Int primary key ,
+NAME varchar(50) ,
+EMPLOYEES Int);
+INSERT INTO COMPANY (ID,NAME,EMPLOYEES)
+VALUES 
+(1,"Adobe",28085),
+(2,"Flipkart",35543),
+(3,"Amazon",1089),
+(4,"Paytm",9982),
+(5,"BookMyShow",5589),
+(6,"Oracle",4003),
+(7,"NIIT",57782),
+(8,"Samsung",2000),
+(9,"TCS",10046),
+(10,"Wipro",3500);
+
+SELECT ID 
+FROM COMPANY
+WHERE EMPLOYEES > 10000
+ORDER BY ID ASC ;
